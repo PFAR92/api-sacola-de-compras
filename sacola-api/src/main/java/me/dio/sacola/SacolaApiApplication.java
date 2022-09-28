@@ -10,4 +10,4 @@ public class SacolaApiApplication {
 		SpringApplication.run(SacolaApiApplication.class, args);
 	}
 
-}	
+}
