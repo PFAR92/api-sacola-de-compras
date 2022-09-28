@@ -1,5 +1,5 @@
 sever:
-  port: 8081
+  port: 8080
 springs:
   h2:
 console:
