@@ -1,4 +1,4 @@
-package me.dio.sacola.Service;
+package me.dio.sacola.service;
 
 import me.dio.sacola.model.Item;
 import me.dio.sacola.model.Sacola;

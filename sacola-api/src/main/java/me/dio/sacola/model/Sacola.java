@@ -35,7 +35,7 @@ public class Sacola {
     @JsonIgnore
     private Cliente cliente;
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Item> items;
+    private List<Item> itens;
     private Double valorTotal;
 
     @Enumerated
