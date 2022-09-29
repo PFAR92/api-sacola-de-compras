@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 public class ItemDto {
-    private Long produto;
+    private Long produtoId;
     private int quantidade;
-    private Long idSacola;
+    private Long sacolaId;
 }
