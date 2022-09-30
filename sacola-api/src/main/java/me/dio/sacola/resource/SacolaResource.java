@@ -9,12 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import me.dio.sacola.model.Item;
 import me.dio.sacola.model.Sacola;
 import me.dio.sacola.resource.dto.ItemDto;
 import me.dio.sacola.service.SacolaService;
-
+@Api(value = "ifood-devweek/sacola")
 @RestController
 @RequestMapping("/ifood-devweek/sacola")
 @RequiredArgsConstructor
