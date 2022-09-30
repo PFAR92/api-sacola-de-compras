@@ -60,11 +60,11 @@ public class SacolaServiceImpl implements SacolaService{
             valorDosItens.add(valorTotalItem);
         }
 
-        Double valorTotalSacola = 0.0;
-        for (Double valorDeCadaItem : valorDosItens) {
-            valorTotalSacola += valorDeCadaItem;
-        }
+        double valorTotalSacola = valorDosItens.stream()
+            .mapToDouble(valorTotalDeCadaItem -> valorTotalDeCadaItem)
+            .sum();
 
+        sacola.setValorTotal(valorTotalSacola);
         sacolaRepository.save(sacola);
         return itemParaSerInserido;
     }
